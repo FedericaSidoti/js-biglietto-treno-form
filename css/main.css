@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/train.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #70080B;
+    font-weight: 700;
+}
+
+.fog {
+    background-color: #ACB5B4;
+    opacity: 0.8 ;
+}
+
+.placeholder {
+    background-color: #FFFFFF;
+    min-height: 50px;
+    width: 80px;
+    text-align: center;
+}
+
+.large {
+    width: 200px;
+}

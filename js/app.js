@@ -15,13 +15,17 @@ const km = parseFloat(inputDomElement.value)
 const age = parseInt(selectDomElement.value)
 /*calcolo*/
 const prezzoTotaleKM = 0.21 * km ;
-let valoreSconto = 0 
+let valoreSconto = 0 ;
+let ageValue = 'da 18 a 65' ; 
 
 if (age === 0) {
     valoreSconto = prezzoTotaleKM * ( 20 / 100)
+    ageValue = 'da 0 a 18'
+
 }
 else if (age === 2) {
     valoreSconto = prezzoTotaleKM * ( 40 / 100)
+    ageValue = 'più di 65'
 }
     
 let prezzoFinale = prezzoTotaleKM - valoreSconto; 
@@ -38,7 +42,7 @@ const nameDomElement = document.getElementById('name-stamp');
 nameDomElement.innerHTML = textDomElement.value ;
 
 const ageDomElement = document.getElementById('age-stamp')
-ageDomElement.innerHTML = age ;
+ageDomElement.innerHTML = ageValue ;
 
 const kmDomElement = document.getElementById('km-stamp')
 kmDomElement.innerHTML = km ;
@@ -48,7 +52,7 @@ priceDomElement.innerHTML = prezzoFinale ;
 
     })
 
-//aggiungere input per il nome
+
 
 
     

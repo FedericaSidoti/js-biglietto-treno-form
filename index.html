@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Biglietto form</title>
 </head>
-<body>
-    <h1>Calcola il prezzo del tuo biglietto</h1>
-    <div class="fake-form">
-        <input type="text" id="namerequest" placeholder="Scrivi qui il tuo nome">
-        <input type="number" id="kmrequest" placeholder="Scrivi qui i km che devi percorrere">
-    </div>
-    <div>
-        <label for="agerequest">Seleziona la tua età</label>
-        <select name="age" id="agerequest"> 
-            <option value="0">da 0 a 18 anni</option>
-            <option value="1">da 18 a 65 anni</option>
-            <option value="2">Over 65</option>
-        </select>
-        <button id="btn-price">Calcola</button>
-    </div>
-    <div id="recap">
-        <p> Ciao <span id="name-stamp"></span>,
-            dato che la tua età magicamente verificata è <span id="age-stamp"></span> 
-            il tuo biglietto dell' Hogwarts Espress per percorrere <span id="km-stamp"></span> km
-            avrà il costo di <span id="price-stamp"></span> galeoni. 
+<body class=" p-5">
+    <div class="container fog">
+        <h1 class="text-center p-5 fs-1 fw-1">Calcola il prezzo del tuo biglietto per l'Hogwarts Express</h1>
+        <div class="p-5">
+            <input class="input-group mb-3 p-3 fs-5" type="text" id="namerequest" placeholder="Scrivi qui il tuo nome">
+            <input class="input-group mb-3 p-3 fs-5" type="number" id="kmrequest" placeholder="Scrivi qui i km che devi percorrere">
+        </div>
+        <div class=" d-flex justify-content-center align-items-center">
+            <label class="p-5 fs-4" for="agerequest">Seleziona la tua età</label>
+            <select class="p-2 fs-5" name="age" id="agerequest"> 
+                <option value="0">da 0 a 18 anni</option>
+                <option value="1">da 18 a 65 anni</option>
+                <option value="2">Over 65</option>
+            </select>
+            <button class="btn btn-dark ms-3" id="btn-price">Calcola</button>
+        </div>
+        <div class="p-5 fs-3" id="recap">
+            <p> Ciao <span class="placeholder large" id="name-stamp"></span>, 
+            benvenuto sulla piattaforma per prenotare il tuo viaggio ad Hogwarts!
+            Dato che la tua età magicamente verificata è <span class="placeholder large" id="age-stamp"></span> anni, 
+            il tuo biglietto dell'Hogwarts Espress per percorrere <span class="placeholder" id="km-stamp"></span> km
+            avrà il costo di <span class="placeholder" id="price-stamp"></span> galeoni. 
             Ricorda la bacchetta, il gufo/rospo/gatto e i libri di incantesimi. 
             Non compilare mai più questo form o verrai maledetto. 
             Minerva Mc Granitt
-        </p>
-    </div>
+            </p>
+        </div>
+</div>
     <script src="./js/app.js"></script>
 </body>
 </html>
