@@ -1,26 +1,17 @@
 /* -  recuperare il bottone per inivare i dati*/ 
-
 const btnDomElement = document.getElementById('btn-price')
-
-
+/*  - recuperare l'input */
+const inputDomElement = document.getElementById('kmrequest'); 
+/*    - recuperare la select */
+const selectDomElement = document.getElementById('agerequest');
 
 /* Collegare il bottone al click */
 btnDomElement.addEventListener('click', function () {
-    /*  - recuperare l'input */
-
-const inputDomElement = document.getElementById('kmrequest'); 
-
-/*    - recuperare la select */
-
-const selectDomElement = document.getElementById('agerequest');
 
 	// recupero dall'input il valore 
 	let km = parseInt(inputDomElement.value)
-
     // recupero dalla select il valore 
-
     let age = parseInt(selectDomElement.value)
-
     /*calcolo*/
 const prezzoTotaleKM = 0.21 * km
 let valoreSconto = 0 
