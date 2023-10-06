@@ -52,7 +52,28 @@ priceDomElement.innerHTML = prezzoFinale ;
 
     })
 
+const btnClearDomElement = document.getElementById('btn-clear')
+btnClearDomElement.addEventListener('click', function() {
 
+    const nameDomElement = document.getElementById('name-stamp');
+    nameDomElement.innerHTML = ' '
+
+    const ageDomElement = document.getElementById('age-stamp')
+    ageDomElement.innerHTML = ' ' ;
+
+    const kmDomElement = document.getElementById('km-stamp')
+    kmDomElement.innerHTML = ' ' ;
+
+    const priceDomElement = document.getElementById('price-stamp')
+    priceDomElement.innerHTML = ' ' ;  
+
+    textDomElement.value = ' '
+
+    inputDomElement.value = ' '
+
+    selectDomElement.selectedIndex = 0 ; 
+
+})
 
 
     
